@@ -86,7 +86,7 @@ TestGrupAdi <br>
 
 Test
 -----
-TestId <br>
+TestId - PK <br>
 TestAdi <br>
 Ucret <br>
 TestGrupAdi (TestGrupId) <br>
@@ -188,7 +188,7 @@ IstenenTahlilId (TahlilId) <br>
 
 tahlilersonuc
 --------------
-TahlilSonucId <br>
+TahlilSonucId - PK <br>
 Aciklama <br>
 Durum <br> 
 Sonuc <br>
