@@ -8,7 +8,7 @@ Access Hastane Veri Tabanı İlişkiler:
 
 İller
 ------
-IlId - PK
+IlId - PK <br>
 IlAdı
 IlPlaka
 
