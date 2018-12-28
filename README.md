@@ -9,218 +9,218 @@ Access Hastane Veri Tabanı İlişkiler:
 İller
 ------
 IlId - PK <br>
-IlAdı
-IlPlaka
+IlAdı <br>
+IlPlaka <br>
 
 İlceler
 --------
-IlceId - PK
-IlceAdi
-IlId (IlId)
+IlceId - PK <br>
+IlceAdi <br>
+IlId (IlId) <br>
 
 Kangrubu
 ---------
-KanGrubuId - PK
-KangrubuAdi
+KanGrubuId - PK <br>
+KangrubuAdi <br>
 
 Ilaclar
 --------
-Barkod - PK
-IlacAdi
-İçerikBilgi
-Fiyat
+Barkod - PK <br>
+IlacAdi <br>
+İçerikBilgi <br>
+Fiyat <br>
 
 Hastaneler
 -----------
-HastaneId - PK
-HastaneAdi
-Telefon -- 05000000000 / 02120000000 => 11 Hane
-IlceId (IlceId)
+HastaneId - PK <br>
+HastaneAdi <br>
+Telefon -- 05000000000 / 02120000000 => 11 Hane <br>
+IlceId (IlceId) <br>
 
 Polikinlikler
 --------------
-PolikinlikId - PK
-PolikinlikAdi
-RandevuSure
-HastaneId (HastaneId)
-
+PolikinlikId - PK <br>
+PolikinlikAdi <br>
+RandevuSure <br>
+HastaneId (HastaneId) <br>
+ 
 Kurumlar
 ---------
-KurumId - PK
-KurumAdi
-Iskonto
+KurumId - PK <br>
+KurumAdi <br>
+Iskonto <br>
 
 OdemeTurleri
 ------------
-OdemeTuruId - PK
-OdemeTuru
+OdemeTuruId - PK <br>
+OdemeTuru <br>
 
 Unvanlar
 ---------
-UnvanId - PK
-UnvanAdi
-PersonelTuru
+UnvanId - PK <br>
+UnvanAdi <br>
+PersonelTuru <br>
 
 Personel
 ---------
-PersonelId - PK
-SicilNo
-Ad
-Soyad
-DiplomaNo
-Adres
-Cinsiyet
-EvTel -- 05000000000 / 02120000000 11 Hane
-CepTel
-Email
-DogumTarihi
-DogumYeri
-UnvanId (UnvanId)
-KlinikId (PolikinlikId)
-HastaneId (HastaneId)
+PersonelId - PK <br>
+SicilNo <br>
+Ad <br>
+Soyad <br>
+DiplomaNo <br>
+Adres <br>
+Cinsiyet <br>
+EvTel -- 05000000000 / 02120000000 11 Hane <br>
+CepTel <br>
+Email <br>
+DogumTarihi <br>
+DogumYeri <br>
+UnvanId (UnvanId) <br>
+KlinikId (PolikinlikId) <br>
+HastaneId (HastaneId) <br>
 
 TestGruplari
 -------------
-TestGrupId - PK
-TestGrupAdi
+TestGrupId - PK <br>
+TestGrupAdi <br>
 
 Test
 -----
-TestId
-TestAdi
-Ucret
-TestGrupAdi (TestGrupId)
+TestId <br>
+TestAdi <br>
+Ucret <br>
+TestGrupAdi (TestGrupId) <br>
 
 Hastalar
 ---------
-HastaId - PK
-Ad
-Soyad
-SicilNo
-AdresEvTel -- 05000000000 / 02120000000 => 11 Hane
-IsTel
-CepTel
-TCKimlikNo  -- 11111111111 =>11 hane
-DogumTarihi
-Cinsiyet
-MedeniHali
-Meslek
-OncekiSoyad
-VergiNo
-KayitTarihi
-KurumId (KurumId)
-KanGrubuId (KanGrubuId)
-Kayitilid (IlId)
-KayitliIlceId (IlceId)
-DogumYeriId (IlId)
+HastaId - PK <br>
+Ad <br>
+Soyad <br>
+SicilNo <br>
+AdresEvTel -- 05000000000 / 02120000000 => 11 Hane <br>
+IsTel <br>
+CepTel <br>
+TCKimlikNo  -- 11111111111 =>11 hane <br>
+DogumTarihi <br>
+Cinsiyet <br>
+MedeniHali <br>
+Meslek <br>
+OncekiSoyad <br>
+VergiNo <br>
+KayitTarihi <br>
+KurumId (KurumId) <br>
+KanGrubuId (KanGrubuId) <br>
+Kayitilid (IlId) <br>
+KayitliIlceId (IlceId) <br>
+DogumYeriId (IlId) <br>
 
 hastagecmisi
 -------------
-GecmisId - PK
-Tarih
-Aciklama
-SurekliKullanilanIlaclar
-GecirdigiHastaliklar
-GecirdigiAmeliyatlar
-SahipOlduguAlerjiler
-HastaId (HastaId)
+GecmisId - PK <br>
+Tarih <br>
+Aciklama <br>
+SurekliKullanilanIlaclar <br>
+GecirdigiHastaliklar <br>
+GecirdigiAmeliyatlar <br>
+SahipOlduguAlerjiler <br>
+HastaId (HastaId) <br>
 
 randevular
 -----------
-RandevuId - PK
-Tarih
-Saat
-Dakika
-Geldimi
-HastaId (HastaId)
-DoktorId (PersonelId)
-PolikinlikId (PolikinlikId)
+RandevuId - PK <br>
+Tarih <br>
+Saat <br>
+Dakika <br>
+Geldimi <br>
+HastaId (HastaId) <br>
+DoktorId (PersonelId) <br>
+PolikinlikId (PolikinlikId) <br>
 
 hastakabul
 -----------
-HastaKabulId - PK
-GelisTarihi
-Sikayet
-Durum
-CikisTarihi
-HastaId (HastaId)
-DoktorId (PersonelId)
-PolikinlikId (PolikinlikId)
-RandevuId (RandevuId)  -- Randevusuz => randevusuzda gelebilirler
+HastaKabulId - PK <br>
+GelisTarihi <br>
+Sikayet <br>
+Durum <br>
+CikisTarihi <br>
+HastaId (HastaId) <br>
+DoktorId (PersonelId) <br>
+PolikinlikId (PolikinlikId) <br>
+RandevuId (RandevuId)  -- Randevusuz => randevusuzda gelebilirler <br>
 
 hastasikayetleri
 -----------------
-HastaSikayetId - PK
-Tarih
-HastaSikayeti
-HastaKabulId (HastaKabulId)
-HastaId (HastaId)
+HastaSikayetId - PK <br>
+Tarih <br>
+HastaSikayeti <br>
+HastaKabulId (HastaKabulId) <br>
+HastaId (HastaId) <br> 
 
 muayeneler
 -----------
-MuayeneId - PK
-Tarih
-HastaKabulId (HastaKabulId)
-DoktorId (PersonelId)
-HastaSikayetId (HastaSikayetId)
+MuayeneId - PK <br>
+Tarih <br>
+HastaKabulId (HastaKabulId) <br>
+DoktorId (PersonelId) <br>
+HastaSikayetId (HastaSikayetId) <br>
 
 Odemeler
 ---------
-OdemeId - PK
-Tarih
-OdemeTuruId (OdemeTuruId)
-Aciklama
-Net
-Indirim
-Toplam
+OdemeId - PK <br>
+Tarih <br>
+OdemeTuruId (OdemeTuruId) <br>
+Aciklama <br>
+Net <br>
+Indirim <br> 
+Toplam <br>
 
 tahliler
 ----------
-TahlilId - PK
-TahlilAdi
+TahlilId - PK <br>
+TahlilAdi <br>
 
 muayenesonuc
 -------------
-MuayeneSonucId - PK
-MuayeneId (MuayeneId)
-Aciklama
-IstenenTahlilId (TahlilId)
+MuayeneSonucId - PK <br>
+MuayeneId (MuayeneId) <br>
+Aciklama <br>
+IstenenTahlilId (TahlilId) <br>
 
 tahlilersonuc
 --------------
-TahlilSonucId
-Aciklama
-Durum
-Sonuc
-Miktar
-Toplam
-TahlilId (TahlilId)
-TestId (TestId)
+TahlilSonucId <br>
+Aciklama <br>
+Durum <br> 
+Sonuc <br>
+Miktar <br>
+Toplam <br>
+TahlilId (TahlilId) <br>
+TestId (TestId) <br>
 
 teshisler
 ----------
-TeshisId - PK
-Tarih
-Teshis
-DoktorId (PersonelId)
-MuayeneId (MuayeneId)
+TeshisId - PK <br>
+Tarih <br>
+Teshis <br>
+DoktorId (PersonelId) <br>
+MuayeneId (MuayeneId) <br>
 
 receteler
 ----------
-ReceteNo - PK
-Tarih
-KurumId (KurumId)
-DoktorId (PersonelId)
-HastaId (HastaId)
+ReceteNo - PK <br>
+Tarih <br>
+KurumId (KurumId) <br>
+DoktorId (PersonelId) <br>
+HastaId (HastaId) <br>
 
 recetelersatirlari
 -------------------
-SatirId - PK
-IlacAdi
-Dozu
-KullanimSekli
-Adet
-Fiyat
-Toplam
-ReceteNo (ReceteNo)
-Barkod (Barkod)
+SatirId - PK <br>
+IlacAdi <br>
+Dozu <br>
+KullanimSekli <br>
+Adet <br>
+Fiyat <br>
+Toplam <br>
+ReceteNo (ReceteNo) <br>
+Barkod (Barkod) <br>
