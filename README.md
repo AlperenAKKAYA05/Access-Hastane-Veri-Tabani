@@ -224,4 +224,3 @@ Fiyat
 Toplam
 ReceteNo (ReceteNo)
 Barkod (Barkod)
-
