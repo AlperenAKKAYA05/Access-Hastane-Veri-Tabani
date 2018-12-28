@@ -34,7 +34,7 @@ Hastaneler
 -----------
 HastaneId - PK
 HastaneAdi
-Telefon -- 05000000000 / 02120000000 11 Hane
+Telefon -- 05000000000 / 02120000000 => 11 Hane
 IlceId (IlceId)
 
 Polikinlikler
@@ -97,10 +97,10 @@ HastaId - PK
 Ad
 Soyad
 SicilNo
-AdresEvTel -- 05000000000 / 02120000000 11 Hane
+AdresEvTel -- 05000000000 / 02120000000 => 11 Hane
 IsTel
 CepTel
-TCKimlikNo  --11 hane
+TCKimlikNo  -- 11111111111 =>11 hane
 DogumTarihi
 Cinsiyet
 MedeniHali
@@ -146,7 +146,7 @@ CikisTarihi
 HastaId (HastaId)
 DoktorId (PersonelId)
 PolikinlikId (PolikinlikId)
-RandevuId (RandevuId)  --randevusuzda gelebilirler
+RandevuId (RandevuId)  -- Randevusuz => randevusuzda gelebilirler
 
 hastasikayetleri
 -----------------
